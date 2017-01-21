@@ -24,6 +24,7 @@ To achieve a greater sense of motion in the early days of animation, this proces
 In the late 1930's, Disney took this to an extreme level with their seven-layered multi-planed camera. For you budding developers in the San Francisco Bay Area, you can see this at the Walt Disney museum in the Presidio, along with an explanation of how it works. If you are outside of the Bay Area, you can watch Disney himself explain it here:
 
 [![Walt Disney](https://img.youtube.com/vi/YdHTlUGN1zw/0.jpg)](https://www.youtube.com/watch?v=YdHTlUGN1zw)
+
 **_Fig. 3. See Walt Disney explain how the multi-planed camera allowed 3D-like animation using parallax_**
 
 One of the most important take-aways from the explanation of how it works is that the scenes are broken up by distance onto different planes by painting the scenes onto different pieces of glass. The background (in Disney's example, the background contains the moon), does not move. To make a 3D effect the pieces of glass can be moved forward or backward. Thus, the moon will stay the same size, where as the elements that are on the closest piece of glass will change size more rapidly.
@@ -31,6 +32,7 @@ One of the most important take-aways from the explanation of how it works is tha
 For side to side motion, animators could let the background remain stationary or move very little, while closer elements on different planes moved at different rates from side to side. These techniques stood the test of time, and were later moved to video games in the early 1980's. One of the first 2D video games to use parallax to make a 3D effect was Jungle King/Jungle Hunt from Taito. A game where the explorer Sir Dudley races to save Lady Penelope in the dangerous jungle. Of course Super Mario Brothers games use parallax scrolling, and the technique still thrives today in Unity 2D game development. If you want to see how archaic games were back then, check out the Atari 2600 version of the game:
 
 [![Jungle King](https://img.youtube.com/vi/flYEqNNSWGs/0.jpg)](https://www.youtube.com/watch?v=flYEqNNSWGs)
+
 **_Fig. 4. In the 1980s parallax effects were used to give a better sense of motion in video games_**
 
 ##Parallax-scrolling for websites
@@ -39,7 +41,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;) 
 
 <p align="center">
-<a href="http://www.studio540.com/"><img src="img/studio540.png" width="400"></img></a>
+<a href="http://www.studio540.com/"><img src="img/studio540.png" height="400"></img></a>
 </p>
 **_Fig. 5. The Website uses a nice scrolling effect to get what would normally be several different pages onto a single page. They basically entice the user to scroll through all of the sections_**
 
@@ -65,7 +67,7 @@ You can find sites that catalog some of the best of the best websites that use a
 http://porschevolution.com/#
 
 <p align="center">
-<a href="http://porschevolution.com/#"><img src="img/porsche.png" width="400"></img></a>
+<a href="http://porschevolution.com/#"><img src="img/porsche.png" height="400"></img></a>
 </p>
 **_Fig. 6. This website is really cool, again using a nice scrolling effect_**
 
@@ -73,7 +75,7 @@ The next example is really over the top:
 http://www.sbs.com.au/theboat/
 
 <p align="center">
-<a href="http://www.sbs.com.au/theboat/"><img src="img/theboat.png" width="400"></img></a>
+<a href="http://www.sbs.com.au/theboat/"><img src="img/theboat.png" height="400"></img></a>
 </p>
 **_Fig. 7. This website uses parallax to achieve motion and depth, and is totally over the top_**
 
