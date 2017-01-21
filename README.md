@@ -41,7 +41,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;) 
 
 <p align="center">
-<a href="http://www.studio540.com/"><img src="img/studio540.png" height="400"></img></a>
+<a href="http://www.studio540.com/"><img src="img/studio540.png" height="500"></img></a>
 </p>
 **_Fig. 5. This website uses a nice scrolling effect to get what would normally be several different pages onto a single page. They basically entice the user to scroll through all of the sections. Click on the image to see it live._**
 
@@ -98,7 +98,7 @@ By just using CSS, a lot of speed and bug performance issues can be alleviated. 
 
 The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under part1.html and part1.css. But for illustrations sake, the main parts are here:
 
-'''HTML
+```HTML
   <body>
     <!-- Adjust to middle of page -->
     <div class="spacer">
@@ -120,11 +120,11 @@ The main part of the HTML code is pretty simple, we have a couple of images that
 
     </div>
   </body>
-  '''
+```
   
 Next, we do a couple of things with the CSS. The first is, just to allow us to 'scroll', I changed the height of the body to a large number of pixels, 2400. That way, we have plenty of "scroll room". Now, depending if you are a [Pear or a Pickle](https://datadaveshin.github.io/pickles-vs-pears/), the container class you have will either be background or foreground. Moreover, your position property will either be 'fixed' or 'relative'. 
   
- '''CSS
+ ```CSS
  body {
   min-height: 2400px;
 }
@@ -166,6 +166,6 @@ Next, we do a couple of things with the CSS. The first is, just to allow us to '
   border-radius: 50%;
   border: 1px solid green;
 }
-'''
+```
 
 If you are a newbie, or hazy on what these property values mean, you can check them out here at [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position), but basically, the element can have values for their 'top', 'right', 'bottom', 'left' in pixels, but those take on different meaning depending what the value of the 'position' property means. The value 'fixed' means that those directional displacements are relative to the screen's viewport, whereas for the 'relative' property - the elements are placed within the flow of the page, and then the position is adjusted. That said, these elements then will of course move when scrolling. 
