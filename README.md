@@ -174,4 +174,11 @@ Next, we do a couple of things with the CSS. The first is, just to allow us to '
 
 If you are a newbie, or hazy on what these property values mean, you can check them out here at [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position), but basically, the element can have values for their 'top', 'right', 'bottom', 'left' in pixels, but those take on different meaning depending what the value of the 'position' property means. The value 'fixed' means that those directional displacements are relative to the screen's viewport, whereas for the 'relative' property - the elements are placed within the flow of the page, and then the position is adjusted. That said, these elements then will of course move when scrolling.
 
-Anyway, try it out. You will see that upon scolling, the pickle will reveal that he was covering a pear. As you continue to scroll, you can see how this occured as another pickle will come up beside the pear. Basically, the pickle masked the pear from view. Now, 
+Anyway, try it out. You will see that upon scolling, the pickle will reveal that he was covering a pear. As you continue to scroll, you can see how this occured as another pickle will come up beside the pear. Basically, the pickle masked the pear from view. 
+
+Now, I think it is important to stop right here and play with this system. Try changing the position values around. Switch them between 'static', 'fixed', 'relative', 'absolute'. To help you visualize, use part1b.html and part1b.css - here the border's are now uncommented (you can also uncomment them yourself, in the part1.css file. These borders will help you visualize what happens when you change the position property. 
+
+However, to get on track. This is a basic way to set up scrolling effects for your website.
+
+##Actual Parallax
+
