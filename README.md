@@ -4,8 +4,10 @@ In the website design world, parallax-scrolling is a technique used to add a sen
 
 Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along. 
 
-
-[Fig. 1. Parallax diagram](./img/300px-Parallax_Example.svg.png)
+<p align="center">
+  <img src="./img/300px-Parallax_Example.svg.png" width="350"/>
+</p>
+Fig. 1. Parallax diagram
 
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples when looking at milk in a measuring cup. 
 
