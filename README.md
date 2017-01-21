@@ -5,15 +5,15 @@ In the website design world, parallax-scrolling is a technique used to add a sen
 Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along. 
 
 <p align="center">
-  <img src="img/parallax-example2.png"></img>
+  <img src="img/parallax-example2.png" width="400"></img>
 </p>
 _Fig. 1. Parallax diagram_**
 
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples when looking at milk in a measuring cup. 
 
 <p align="center">
-  <img src="img/pyrex1.jpg"></img>
-  <img src="img/pyrex2.jpg"></img>
+  <img src="img/pyrex1.jpg" width="400"></img>
+  <img src="img/pyrex2.jpg" width="400"></img>
 </p>
 _Fig 2. On the left it appears we have more than 1/2 a cup because we are looking at an angle from above. When the camera (or your eye) is in the same plane as the top layer of the milk, you can see we actually have 1/2 a cup._**
 
@@ -37,8 +37,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;) 
 
 <p align="center">
-<a href="http://www.studio540.com/"><img src="img/studio540.png"></img></a>
-  
+<a href="http://www.studio540.com/"><img src="img/studio540.png" width="400"></img></a>
 </p>
 
 
