@@ -12,8 +12,8 @@ Fig. 1. Parallax diagram
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples when looking at milk in a measuring cup. 
 
 <p align="center">
-  <img src="img/pyrex1.png"></img>
-  <img src="img/pyrex2.png"></img>
+  <img src="img/pyrex1.jpg"></img>
+  <img src="img/pyrex2.jpg"></img>
 </p>
 Fig 2. On the left it appears we have more than 1/2 a cup because we are looking at an angle from above. When the camera (or your eye) is in the same plane as the top layer of the milk, you can see we actually have 1/2 a cup.
 
