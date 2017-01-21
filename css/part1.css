@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial';
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 2400px;
+}
+
+.spacer {
+  margin: 0 25% 0 25%;
+}
+
+.pear-background-container {
+  position: fixed;
+  top: 150px;
+  border: 1px solid cyan;
+}
+
+.pickle-foreground-container {
+  position: relative;
+  top: 150px;
+  border: 1px solid red;
+}
+
+.pickle-foreground-container2 {
+  position: relative;
+  top: 800px;
+  left: 220px;
+  border: 1px solid lime;
+}
+
+.pear-background-container img {
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+
+.pickle-foreground-container img {
+  border-radius: 50%;
+  border: 1px solid pink;
+}
+
+.pickle-foreground-container2 img {
+  border-radius: 50%;
+  border: 1px solid green;
+}
+
+/*Copyright 2017 David Shin*/
