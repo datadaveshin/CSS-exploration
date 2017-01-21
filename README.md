@@ -69,5 +69,9 @@ Layering:
 Pattern: 
 Sprite: 
 
-There are several concerns when using parallax on your web designs. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques require JavaScript and many write websites with additional libraries or frameworks such as JQuery. This is fine for many browsers, but as we move towards mobile development and notepad devices, 
-Other's note 
+There are several concerns when using parallax on your web designs. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques require JavaScript and many write websites with additional libraries or frameworks such as JQuery. This is fine for many browsers, but as we move towards mobile development and notepad devices, extra care must be taken when using JavaScript. 
+
+Other's note difficulties in SEO, stating that with a single page, you only have one set of metadata, and your semantic HTML is limited. However, one of the main detractors from using JavaScript in some of the methods is performance issues. I noticed myself when writing this primer, that the Porsche website example above sometimes runs into problems when I view the site in Chrome. Which now brings us to:
+
+##Parallax scrolling effects with just CSS
+By just using CSS, a lot of speed and bug performance issues can be alleviated. Moreover, at least for now, we can learn a little more about CSS. First, let's just start off with something simple... using the "position" properties to make one image scroll while keeping the other stationary.
