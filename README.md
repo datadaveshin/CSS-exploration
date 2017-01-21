@@ -6,6 +6,7 @@ Parallax itself is a term used to describe the apparent displacement of an objec
 
 <p align="center">
   <img src="img/300px-Parallax_Example.svg.png" width="350"></img>
+  <img src="img/bigsur.jpg" width="350"></img>
 </p>
 Fig. 1. Parallax diagram
 
