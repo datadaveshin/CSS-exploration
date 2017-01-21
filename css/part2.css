@@ -1,12 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>A scaled corrected CSS parallax</title>
-<style>
-
   /* Parallax base styles
   --------------------------------------------- */
 
@@ -50,12 +42,6 @@
     font: 100% / 1.5 Arial;
   }
 
-/*I added*/
-  /*img {
-      max-height: 100%;
-      max-width: 100%;
-  }*/
-
   .parallax {
     font-size: 200%;
   }
@@ -65,8 +51,8 @@
     padding: 100vh 0;
   }
 
-   /* centre the content in the parallax layers */
-  .title {
+   /* center the content in the parallax layers */
+  .spacer {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -74,6 +60,22 @@
     transform: translate(-50%, -50%);
   }
 
+  .spacer2 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .dark-box {
+      height: 400px;
+      width: 100vw;
+      background-color: rgba(255, 200, 200, 0.7);
+  }
+  .wide {
+      height: 100vh;
+      width: auto;
+  }
 
   /* misc
   --------------------------------------------- */
@@ -86,20 +88,3 @@
     text-align:center;
     width: 100%;
   }
-</style>
-</head>
-
-<body>
-  <div class="parallax">
-    <div class="parallax__layer parallax__layer--back">
-      <!-- <div class="title">This is the background</div> -->
-      <img src="resources/img/fjord.jpg">
-    </div>
-    <div class="parallax__layer parallax__layer--base">
-      <!-- <div class="title">This is the foreground</div> -->
-      <img src="resources/img/norwaydock.jpg">
-    </div>
-  </div>
-
-</body>
-</html>
