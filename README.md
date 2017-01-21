@@ -181,4 +181,6 @@ Now, I think it is important to stop right here and play with this system. Try c
 However, to get on track. This is a basic way to set up scrolling effects for your website.
 
 ##Actual Parallax
+While there are a few ways to make scrolling effects with CSS, likely the most interesting is using parallax to make parallax. That's right, we are going to go 3D in order to make a 3D effect. So as far as I can tell, the technique we will be focusing on today was either fully or partially (or independently) developed by Keith Clark.  
+
 
