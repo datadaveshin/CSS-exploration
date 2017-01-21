@@ -27,36 +27,36 @@ body {
 .pear-background-container {
   position: fixed;
   top: 150px;
-  /*border: 1px solid cyan;*/
+  border: 1px solid cyan;
 }
 
 .pickle-foreground-container {
   position: relative;
   top: 150px;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .pickle-foreground-container2 {
   position: relative;
   top: 800px;
   left: 220px;
-  /*border: 1px solid lime;*/
+  border: 1px solid lime;
 }
 
 /*----- Images -----*/
 .pear-background-container img {
   border-radius: 50%;
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 .pickle-foreground-container img {
   border-radius: 50%;
-  /*border: 1px solid pink;*/
+  border: 1px solid pink;
 }
 
 .pickle-foreground-container2 img {
   border-radius: 50%;
-  /*border: 1px solid green;*/
+  border: 1px solid green;
 }
 
 /*Copyright 2017 David Shin*/

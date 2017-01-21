@@ -1,15 +1,15 @@
 # A Primer on Parallax
 ## What is parallax?
-In the website design world, parallax-scrolling is a technique used to add a sense of depth and motion to web pages as the user scrolls downward, or up for that matter, along the page. This adds some sugar and spice to what could otherwise be a flat static web page. Now, while the technique is several years, it is still a part of modern front-end web design and creates a great effect when used wisely. 
+In the website design world, parallax-scrolling is a technique used to add a sense of depth and motion to web pages as the user scrolls downward, or up for that matter, along the page. This adds some sugar and spice to what could otherwise be a flat static web page. Now, while the technique is several years, it is still a part of modern front-end web design and creates a great effect when used wisely.
 
-Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along. 
+Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along.
 
 <p align="center">
   <img src="img/parallax-example2.png" width="400"></img>
 </p>
 **_Fig. 1. Parallax diagram_**
 
-Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples when looking at milk in a measuring cup. 
+Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples when looking at milk in a measuring cup.
 
 <p align="center">
   <img src="img/pyrex1.jpg" width="400"></img>
@@ -19,7 +19,7 @@ Likely, one of the better examples I can recall is accurately reading a beaker f
 
 When taken in conjunction with motion, a great example is when you look out of the window of a moving car. A fence nearest the car will appear to be moving by much quicker than the trees or homes behind the fence, which in turn will seem to move more quickly than say the mountains in the background.
 
-To achieve a greater sense of motion in the early days of animation, this process was done in reverse. You would have the subject in the middle of the screen, while you move the background. Later animators started using multiple backgrounds moving at different speeds to produce a more realistic effect. 
+To achieve a greater sense of motion in the early days of animation, this process was done in reverse. You would have the subject in the middle of the screen, while you move the background. Later animators started using multiple backgrounds moving at different speeds to produce a more realistic effect.
 
 In the late 1930's, Disney took this to an extreme level with their seven-layered multi-planed camera. For you budding developers in the San Francisco Bay Area, you can see this at the Walt Disney museum in the Presidio, along with an explanation of how it works. If you are outside of the Bay Area, you can watch Disney himself explain it here:
 
@@ -36,16 +36,16 @@ For side to side motion, animators could let the background remain stationary or
 **_Fig. 4. In the 1980s parallax effects were used to give a better sense of motion in video games._**
 
 ##Parallax-scrolling for websites
-For the web, in the most simple sense, I would describe parallax scrolling as the appearance of motion caused by a faster moving foreground element as compared to a slower moving element between the foreground and the background. However, what I call 'parallax-like' (one group of elements move while others remain on a static background) is still a cool effect. 
+For the web, in the most simple sense, I would describe parallax scrolling as the appearance of motion caused by a faster moving foreground element as compared to a slower moving element between the foreground and the background. However, what I call 'parallax-like' (one group of elements move while others remain on a static background) is still a cool effect.
 
-Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;) 
+Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;)
 
 <p align="center">
 <a href="http://www.studio540.com/"><img src="img/studio540.png" height="500"></img></a>
 </p>
 **_Fig. 5. This website uses a nice scrolling effect to get what would normally be several different pages onto a single page. They basically entice the user to scroll through all of the sections. Click on the image to see it live._**
 
-Importantly, besides being really clean, I like the responsiveness and how the parallax-like effect is used to effectively go through all of the parts of what a typical martial arts webpage would want to display: 1) a splash page, 2) the instruction team, 3) the class schedule, 4) facility photos, 5) photos of the team training, 6) contact information all on a single page. The skilled designer manages to draw you through the entire site. Which brings me to... 
+Importantly, besides being really clean, I like the responsiveness and how the parallax-like effect is used to effectively go through all of the parts of what a typical martial arts webpage would want to display: 1) a splash page, 2) the instruction team, 3) the class schedule, 4) facility photos, 5) photos of the team training, 6) contact information all on a single page. The skilled designer manages to draw you through the entire site. Which brings me to...
 
 ##When to use a parallax-type scrolling page
 Here are some examples of when you want to use a parallax effect:
@@ -62,7 +62,7 @@ Some of examples when not to use it:
 1. For an e-commerce site. Could you imagine everything on eBay on one page?
 1. A site for a large business organization
 
-However, by using the techniques correctly and when warranted, you can highlight key points of your presentation. Or perhaps just through in little extras that you want the user to pay attention to. 
+However, by using the techniques correctly and when warranted, you can highlight key points of your presentation. Or perhaps just through in little extras that you want the user to pay attention to.
 
 ##Some award winning extreme examples
 You can find sites that catalog some of the best of the best websites that use a certain technology. By checking some out, I found a couple of examples of parallax sites that won some awards. The first however actually isn't a parallax site (or at leat I don't consider it a true parallax site), again because it is using fixed backgrounds and a moving foreground. Nonetheless, it's pretty cool:
@@ -82,14 +82,14 @@ The next example is a masterpiece. It tells a story and is animated throughout. 
 
 
 ##Methods and Concerns
-Well, here's the deal. There are various methods to accomplish these effects. We have already discussed using a fixed background and a moving foreground for a parallax-like scrolling effect. For true parallax sites, there are various methods available to provide animation. 
+Well, here's the deal. There are various methods to accomplish these effects. We have already discussed using a fixed background and a moving foreground for a parallax-like scrolling effect. For true parallax sites, there are various methods available to provide animation.
 
 1. Raster
 1. Layering
-1. Pattern 
-1. Sprite 
+1. Pattern
+1. Sprite
 
-There are several concerns when using parallax on your web designs. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques require JavaScript and many write websites with additional libraries or frameworks such as JQuery. This is fine for many browsers, but as we move towards mobile development and notepad devices, extra care must be taken when using JavaScript. 
+There are several concerns when using parallax on your web designs. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques require JavaScript and many write websites with additional libraries or frameworks such as JQuery. This is fine for many browsers, but as we move towards mobile development and notepad devices, extra care must be taken when using JavaScript.
 
 Other's note difficulties in SEO, stating that with a single page, you only have one set of metadata, and your semantic HTML is limited. However, one of the main detractors from using JavaScript in some of the methods is performance issues. I noticed myself when writing this primer, that the Porsche website example above sometimes runs into problems when I view the site in Chrome. Which now brings us to:
 
@@ -121,51 +121,55 @@ The main part of the HTML code is pretty simple, we have a couple of images that
     </div>
   </body>
 ```
-  
-Next, we do a couple of things with the CSS. The first is, just to allow us to 'scroll', I changed the height of the body to a large number of pixels, 2400. That way, we have plenty of "scroll room". Now, depending if you are a [Pear or a Pickle](https://datadaveshin.github.io/pickles-vs-pears/), the container class you have will either be background or foreground. Moreover, your position property will either be 'fixed' or 'relative'. 
-  
+
+Next, we do a couple of things with the CSS. The first is, just to allow us to 'scroll', I changed the height of the body to a large number of pixels, 2400. That way, we have plenty of "scroll room". Now, depending if you are a [Pear or a Pickle](https://datadaveshin.github.io/pickles-vs-pears/), the container class you have will either be background or foreground. Moreover, your position property will either be 'fixed' or 'relative'.
+
  ```CSS
+ /*Give us a scroll bar and a page with enough "scroll" to it*/
  body {
-  min-height: 2400px;
-}
+   min-height: 2400px;
+ }
 
-.spacer {
-  margin: 0 25% 0 25%;
-}
+ /*----- Bring things to the middle -----*/
+ .spacer {
+   margin: 0 25% 0 25%;
+ }
 
-.pear-background-container {
-  position: fixed;
-  top: 150px;
-  border: 1px solid cyan;
-}
+ /*----- Containers ------*/
+ .pear-background-container {
+   position: fixed;
+   top: 150px;
+   /*border: 1px solid cyan;*/
+ }
 
-.pickle-foreground-container {
-  position: relative;
-  top: 150px;
-  border: 1px solid red;
-}
+ .pickle-foreground-container {
+   position: relative;
+   top: 150px;
+   /*border: 1px solid red;*/
+ }
 
-.pickle-foreground-container2 {
-  position: relative;
-  top: 800px;
-  left: 220px;
-  border: 1px solid lime;
-}
+ .pickle-foreground-container2 {
+   position: relative;
+   top: 800px;
+   left: 220px;
+   /*border: 1px solid lime;*/
+ }
 
-.pear-background-container img {
-  border-radius: 50%;
-  border: 1px solid blue;
-}
+ /*----- Images -----*/
+ .pear-background-container img {
+   border-radius: 50%;
+   /*border: 1px solid blue;*/
+ }
 
-.pickle-foreground-container img {
-  border-radius: 50%;
-  border: 1px solid pink;
-}
+ .pickle-foreground-container img {
+   border-radius: 50%;
+   /*border: 1px solid pink;*/
+ }
 
-.pickle-foreground-container2 img {
-  border-radius: 50%;
-  border: 1px solid green;
-}
+ .pickle-foreground-container2 img {
+   border-radius: 50%;
+   /*border: 1px solid green;*/
+ }
 ```
 
-If you are a newbie, or hazy on what these property values mean, you can check them out here at [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position), but basically, the element can have values for their 'top', 'right', 'bottom', 'left' in pixels, but those take on different meaning depending what the value of the 'position' property means. The value 'fixed' means that those directional displacements are relative to the screen's viewport, whereas for the 'relative' property - the elements are placed within the flow of the page, and then the position is adjusted. That said, these elements then will of course move when scrolling. 
+If you are a newbie, or hazy on what these property values mean, you can check them out here at [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position), but basically, the element can have values for their 'top', 'right', 'bottom', 'left' in pixels, but those take on different meaning depending what the value of the 'position' property means. The value 'fixed' means that those directional displacements are relative to the screen's viewport, whereas for the 'relative' property - the elements are placed within the flow of the page, and then the position is adjusted. That said, these elements then will of course move when scrolling.
