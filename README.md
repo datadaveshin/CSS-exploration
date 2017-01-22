@@ -253,6 +253,7 @@ So here we have now applied the scale factor and you can see in [part4.html](htt
 Now, of course, as I was trying to make my own full-blown fancy version of a web-site I started running into problems. After the typical frustration, and continuing writing this up... I of course stumbled across a youtube video from Thomas Bradley that nicely goes over what has been discussed, and a few little extra tricks to put your page together using this technique. 
 
 [![tutorial](https://img.youtube.com/vi/n9zLJ0I8Djk/0.jpg)](https://www.youtube.com/watch?v=n9zLJ0I8Djk)
+
 **_Fig. 10. The CSS technique with a couple of little tweaks._**
 
 Likely the most important is a formula to line up your images to the viewport. Here you would set the 'position' property of your moving div to 'relative', and give the 'top' property a value of `calc(((100vh - aspectRatio) / 4 * -2)`, but watch the video because he has a has a couple of other nice tricks. Other considerations can be found [here](http://keithclark.co.uk/articles/practical-css-parallax/). All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
