@@ -57,5 +57,5 @@ body {
 
 /*Change opacity to help see more clearly - TOGGLE ON AND OFF*/
 .parallax_layer-front img {
-  opacity: 0.6;
+  /*opacity: 0.7;*/
 }
