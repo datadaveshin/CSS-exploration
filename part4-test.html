@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-<title>Pure scaled CSS parallax</title>
+<title>Pure CSS parallax</title>
 <style>
 
   /* Parallax base styles
@@ -20,7 +20,7 @@
   }
 
   .parallax_layer {
-    position: absolute;
+    position: absolute;;
     top: 0;
     left: 0;
     right: 0;
@@ -30,7 +30,6 @@
   .parallax_layer-front {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    /*border: 1px solid green;*/
   }
 
   .parallax_layer-back {
@@ -60,31 +59,31 @@
     padding: 100vh 0;
   }
 
-   /* centre the content in the parallax layers */
+  /* centre the content in the parallax layers */
   .title {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+ }
+
   /*Change opacity to help see more clearly*/
   .parallax_layer--base img {
-    /*opacity: 0.7; */
+    /*opacity: 0.7;*/
   }
 </style>
 </head>
 
 <body>
   <div class="parallax">
-
     <div class="parallax_layer parallax_layer-front">
-      <div class="title">This is the foreground</div>
+        <div class="title">This is the foreground</div>
       <!-- <img src="img/bigsur2.jpg"> -->
     </div>
 
     <div class="parallax_layer parallax_layer-back">
-      <div class="title">This is the background</div>
+        <div class="title">This is the background</div>
       <!-- <img src="img/bigsur2.jpg"> -->
     </div>
 

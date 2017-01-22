@@ -4,19 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/part2.css"
+    <link rel="stylesheet" type="text/css" href="css/part2.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <title>A scaled corrected CSS parallax</title>
   </head>
 
   <body>
     <div class="parallax">
-      <div class="parallax_layer parallax_layer-back">
-        <div class="spacer"><div class="wide"><img src="img/pickle-small.png"></div></div>
-      </div>
+
+      <!-- Pear -->
       <div class="parallax_layer parallax_layer-front">
-        <div class="spacer2"><div class="wide"><img src="img/pear-small.png"></div></div>
+        <div class="spacer-pear">
+          <img src="img/pear-small.png">
+        </div>
       </div>
+
+      <!-- Pickle -->
+      <div class="parallax_layer parallax_layer-back">
+        <div class="spacer-pickle">
+          <img src="img/pickle-small.png">
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
