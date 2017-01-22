@@ -276,3 +276,4 @@ _References for your enjoyment:_
 - https://www.youtube.com/watch?v=n9zLJ0I8Djk
 - http://keithclark.co.uk/articles/practical-css-parallax/
 - https://learn-the-web.algonquindesign.ca/topics/css-animations-effects/
+- https://css-tricks.com/tour-performant-responsive-css-site/
