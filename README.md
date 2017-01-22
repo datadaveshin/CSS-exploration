@@ -183,4 +183,57 @@ However, to get on track. This is a basic way to set up scrolling effects for yo
 ##Actual Parallax
 While there are a few ways to make scrolling effects with CSS, likely the most interesting is using parallax to make parallax. That's right, we are going to go 3D in order to make a 3D effect. So as far as I can tell, the technique we will be focusing on today was either fully or partially (or independently) developed by Keith Clark.  
 
+Again, the code is provided in the files as part2.html and part2.css, while the important parts are displayed below:
+
+```HTML
+  <body>
+    <div class="parallax">
+      <div class="parallax_layer parallax_layer-back">
+        <div class="spacer"><div class="wide"><img src="img/pickle-small.png"></div></div>
+      </div>
+      <div class="parallax_layer parallax_layer-front">
+        <div class="spacer2"><div class="wide"><img src="img/pear-small.png"></div></div>
+      </div>
+    </div>
+  </body>
+ ```
+
+ ```CSS
+ .parallax {
+    font-size: 200%;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax_layer {
+    padding: 100vh 0;
+  }
+
+   /* center the content in the parallax layers */
+  .spacer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .spacer2 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .dark-box {
+  
+      height: 400px;
+      width: 100vw;
+      background-color: rgba(255, 200, 200, 0.7);
+  }
+  .wide {
+      height: 100vh;
+      width: auto;
+  }
+```
+Now when you scroll the pear out paces the pickle!!!
 
