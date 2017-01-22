@@ -91,10 +91,9 @@ Going back to one of the main detractors - performance issues - I noticed myself
 ##Parallax scrolling effects with just CSS
 By just using CSS, a lot of speed and bug performance issues can be alleviated. Moreover, at least for now, we can learn a little more about CSS. First, let's just start off with something simple... using the "position" properties to make one image scroll while keeping the other stationary.
 
-The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under [part1.html](part1.html) and part1.css. But for illustrations sake, the main parts are here and you can see the results (for this page and the following) by simply clicking on the names of the files because they are linked:
+The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under [part1.html](https://datadaveshin.github.io/parallax/part1.html) and part1.css. But for illustrations sake, the main parts are here and you can see the results (for this page and the following) by simply clicking on the names of the files because they are linked:
 
 ```HTML
-  <body>
     <!-- Adjust to middle of page -->
     <div class="spacer">
 
@@ -114,13 +113,12 @@ The main part of the HTML code is pretty simple, we have a couple of images that
     </div>
 
     </div>
-  </body>
 ```
 
 Next, we do a couple of things with the CSS. The first is, just to allow us to 'scroll', I changed the height of the body to a large number of pixels, 2400. That way, we have plenty of "scroll room". Now, depending if you are a [Pear or a Pickle](https://datadaveshin.github.io/pickles-vs-pears/), the container class you have will either be background or foreground. Moreover, your position property will either be 'fixed' or 'relative'.
 
  ```CSS
- /*Give us a scroll bar and a page with enough "scroll" to it*/
+ /* Give us a scroll bar and a page with enough "scroll" to it*/
  body {
    min-height: 2400px;
  }
@@ -171,14 +169,14 @@ If you are a newbie, or hazy on what these property values mean, you can check t
 
 Anyway, try it out. You will see that upon scolling, the pickle will reveal that he was covering a pear. As you continue to scroll, you can see how this occured as another pickle will come up beside the pear. Basically, the pickle masked the pear from view. 
 
-Now, I think it is important to stop right here and play with this system. Try changing the position values around. Switch them between 'static', 'fixed', 'relative', 'absolute'. To help you visualize, use [part1b.html](part1b.html) that calls part1b.css - here the border's are now uncommented (you can also uncomment them yourself, in the part1.css file. These borders will help you visualize what happens when you change the position property. 
+Now, I think it is important to stop right here and play with this system. Try changing the position values around. Switch them between 'static', 'fixed', 'relative', 'absolute'. To help you visualize, use [part1b.html](https://datadaveshin.github.io/parallax/part1b.html) that calls part1b.css - here the border's are now uncommented (you can also uncomment them yourself, in the part1.css file. These borders will help you visualize what happens when you change the position property. 
 
 However, to get on track. This is a basic way to set up scrolling effects for your website.
 
 ##Actual Parallax
 While there are a few ways to make scrolling effects with CSS, likely the most interesting is using parallax to make parallax. That's right, we are going to go 3D in order to make a 3D effect. So as far as I can tell, the technique we will be focusing on today was either fully or partially (or independently) developed by Keith Clark.  
 
-Again, the code is provided in the files as [part2.html](part2.html) and part2.css, while some of the important parts are displayed below:
+Again, the code is provided in the files as [part2.html](https://datadaveshin.github.io/parallax/part2.html) and part2.css, while some of the important parts are displayed below:
 
 ```HTML
     <div class="parallax">
@@ -232,13 +230,47 @@ Again, the code is provided in the files as [part2.html](part2.html) and part2.c
 
 Now when you scroll the pear out paces the pickle!!!
 
-So, what is happening here. Well, what Keith did was take into account that the browser actually can work in 3D. Here he uses the [perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) CSS property in the 'parallax' class. The values for this property set the displacement from the z = 0 plane and the viewer. The real magic comes from the [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) property - this allows you to alter rotation and translation, as well as skewness and scale in 3D coordinate space. By giving the value of -1 to the "back" layer that holds the pickle, the pickle will move slower... why? Think about Walt Disney and the video (which I hope you watched above). This is the same principle as the first example he gave in the video with the moon. While there is no fixed 'moon' in this example, the pickle represents say a character on one of the lower level planes of the multi-plane camera platform. The pear is one of the close ones. If we swap out the pickle and the pear with the same rectangular image, representative of one of Disney's planes, things might be more clear... so check out [part3.html](part3.html). 
+So, what is happening here. Well, what Keith did was take into account that the browser actually can work in 3D. Here he uses the [perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) CSS property in the 'parallax' class. The values for this property set the displacement from the z = 0 plane and the viewer. The real magic comes from the [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) property - this allows you to alter rotation and translation, as well as skewness and scale in 3D coordinate space. By giving the value of -1 to the "back" layer that holds the pickle, the pickle will move slower... why? Think about Walt Disney and the video (which I hope you watched above). This is the same principle as the first example he gave in the video with the moon. While there is no fixed 'moon' in this example, the pickle represents say a character on one of the lower level planes of the multi-plane camera platform. The pear is one of the close ones. If we swap out the pickle and the pear with the same rectangular image, representative of one of Disney's planes, things might be more clear... so check out [part3.html](https://datadaveshin.github.io/parallax/part3.html. 
 
-In [part3.html](part3.html) Here you will see one of my favorite spots that is south of San Francisco. The two images are the same size. They are the same image:
+In [part3.html](https://datadaveshin.github.io/parallax/part3.html) Here you will see one of my favorite spots that is south of San Francisco. The two images are the same size. They are the same image:
 
 <p align="center">
-<a href="part3.html"><img src="img/part3.png" height="400"></img></a>
+<a href="https://datadaveshin.github.io/parallax/part3.html"><img src="img/part3.png" height="400"></img></a>
 </p>
 **_Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up._**
 
-However, one is smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html]()
+However, one is smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html](https://datadaveshin.github.io/parallax/part3b.html), or perhaps it may be clearer with text [part3c.html](https://datadaveshin.github.io/parallax/part3c.html). 
+
+Now, you may ask, why was the pickle the same size as the pear??? Well, there is one other part that was in that particular example that was not included in the ones that followed. Keith uses 'tranform' again, but with scaling using the 'scale' function. So basically, the back image is further away, so we must increase it's size. The calculation to set the scale is `1 + (translateZ * -1) / perspective`, so in this case: 1 + (-1 * -1) / 1 = 2. Using this formula, you can set the relative speeds of your elements.
+
+So here we have now applied the scale factor and you can see in [part4.html](https://datadaveshin.github.io/parallax/part4.html) that the words are now the same size. Well, maybe that isn't the easiest to see, how about if the words said the same thing... [part4b.html](https://datadaveshin.github.io/parallax/part4b.html)
+
+<p align="center">
+<a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled.png" height="400"></img></a>
+</p>
+**_Fig. 9. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up._**
+
+Now, of course, as I was trying to make my own full-blown fancy version of a web-site I started running into problems. After the typical frustration, and continuing writing this up... I of course stumbled across a youtube video from Thomas Bradley that nicely goes over what has been discussed, and a few little extra tricks to put your page together using this technique. 
+
+[![tutorial](https://img.youtube.com/vi/n9zLJ0I8Djk/0.jpg)](https://www.youtube.com/watch?v=n9zLJ0I8Djk)
+**_Fig. 10. The CSS technique with a couple of little tweaks._**
+
+Likely the most important is a formula to line up your images to the viewport. Here you would set the 'position' property of your moving div to 'relative', and give the 'top' property a value of `calc(((100vh - aspectRatio) / 4 * -2)`, but watch the video because he has a has a couple of other nice tricks. Other considerations can be found [here](http://keithclark.co.uk/articles/practical-css-parallax/). All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
+
+References for your enjoyment:
+https://en.wikipedia.org/wiki/Multiplane_camera
+https://www.youtube.com/watch?v=YdHTlUGN1zw
+http://www.awwwards.com/20-best-websites-with-parallax-scrolling-of-2013.html
+http://www.awwwards.com/30-great-websites-with-parallax-scrolling.html
+http://www.creativebloq.com/web-design/parallax-scrolling-1131762
+http://www.wix.com/blog/2015/10/captivate-your-site-viewers-with-parallax-scrolling/
+http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tutorials/
+https://envato.com/blog/parallax-scrolling-in-web-design/
+https://clickrain.com/blog/parallax-scrolling-examples-and-history
+https://envato.com/blog/parallax-scrolling-in-web-design/
+https://cyberchimps.com/parallax-web-design/
+http://keithclark.co.uk/articles/pure-css-parallax-websites/
+https://www.unleashed-technologies.com/blog/2013/08/15/what-parallax-web-design-%E2%80%93-definitions-tips-considerations
+https://www.youtube.com/watch?v=n9zLJ0I8Djk
+http://keithclark.co.uk/articles/practical-css-parallax/
+https://learn-the-web.algonquindesign.ca/topics/css-animations-effects/
