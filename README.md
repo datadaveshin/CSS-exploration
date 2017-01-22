@@ -248,7 +248,7 @@ So here we have now applied the scale factor and you can see in [part4.html](htt
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled.png" height="400"></img></a>
 </p>
-**_Fig. 9. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up._**
+**_Fig. 9. There are two words here, but they appear as one because the scale factor is layed out correctly._**
 
 Now, of course, as I was trying to make my own full-blown fancy version of a web-site I started running into problems. After the typical frustration, and continuing writing this up... I of course stumbled across a youtube video from Thomas Bradley that nicely goes over what has been discussed, and a few little extra tricks to put your page together using this technique. 
 
