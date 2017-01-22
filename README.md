@@ -38,7 +38,7 @@ For side to side motion, animators could let the background remain stationary or
 ##Parallax-scrolling for websites
 For the web, in the most simple sense, I would describe parallax scrolling as the appearance of motion caused by a faster moving foreground element as compared to a slower moving element between the foreground and the background. However, what I call 'parallax-like' (one group of elements move while others remain on a static background) is still a cool effect.
 
-Here is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;)
+[Here](http://www.studio540.com/) is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;)
 
 <p align="center">
 <a href="http://www.studio540.com/"><img src="img/studio540.png" height="500"></img></a>
