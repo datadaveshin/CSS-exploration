@@ -260,19 +260,19 @@ Likely the most important is a formula to line up your images to the viewport. H
 
 _References for your enjoyment:_
 
--https://en.wikipedia.org/wiki/Multiplane_camera
--https://www.youtube.com/watch?v=YdHTlUGN1zw
--http://www.awwwards.com/20-best-websites-with-parallax-scrolling-of-2013.html
--http://www.awwwards.com/30-great-websites-with-parallax-scrolling.html
--http://www.creativebloq.com/web-design/parallax-scrolling-1131762
--http://www.wix.com/blog/2015/10/captivate-your-site-viewers-with-parallax-scrolling/
--http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tutorials/
--https://envato.com/blog/parallax-scrolling-in-web-design/
--https://clickrain.com/blog/parallax-scrolling-examples-and-history
--https://envato.com/blog/parallax-scrolling-in-web-design/
--https://cyberchimps.com/parallax-web-design/
--http://keithclark.co.uk/articles/pure-css-parallax-websites/
--https://www.unleashed-technologies.com/blog/2013/08/15/what-parallax-web-design-%E2%80%93-definitions-tips-considerations
--https://www.youtube.com/watch?v=n9zLJ0I8Djk
--http://keithclark.co.uk/articles/practical-css-parallax/
--https://learn-the-web.algonquindesign.ca/topics/css-animations-effects/
+- https://en.wikipedia.org/wiki/Multiplane_camera
+- https://www.youtube.com/watch?v=YdHTlUGN1zw
+- http://www.awwwards.com/20-best-websites-with-parallax-scrolling-of-2013.html
+- http://www.awwwards.com/30-great-websites-with-parallax-scrolling.html
+- http://www.creativebloq.com/web-design/parallax-scrolling-1131762
+- http://www.wix.com/blog/2015/10/captivate-your-site-viewers-with-parallax-scrolling/
+- http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tutorials/
+- https://envato.com/blog/parallax-scrolling-in-web-design/
+- https://clickrain.com/blog/parallax-scrolling-examples-and-history
+- https://envato.com/blog/parallax-scrolling-in-web-design/
+- https://cyberchimps.com/parallax-web-design/
+- http://keithclark.co.uk/articles/pure-css-parallax-websites/
+- https://www.unleashed-technologies.com/blog/2013/08/15/what-parallax-web-design-%E2%80%93-definitions-tips-considerations
+- https://www.youtube.com/watch?v=n9zLJ0I8Djk
+- http://keithclark.co.uk/articles/practical-css-parallax/
+- https://learn-the-web.algonquindesign.ca/topics/css-animations-effects/
