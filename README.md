@@ -82,21 +82,16 @@ The next example is a masterpiece. It tells a story and is animated throughout. 
 
 
 ##Methods and Concerns
-Well, here's the deal. There are various methods to accomplish these effects. We have already discussed using a fixed background and a moving foreground for a parallax-like scrolling effect. For true parallax sites, there are various methods available to provide animation.
+Well, here's the deal. There are various methods to accomplish these effects. We have already discussed using a fixed background and a moving foreground for a parallax-like scrolling effect. For true parallax sites, there are various methods available to provide animation, however they may rely on constantly redrawing or rasterizing images, using complex patterns or sprites. 
 
-1. Raster
-1. Layering
-1. Pattern
-1. Sprite
+There are several concerns when using parallax on your web designs, and a big one is performance. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques do require JavaScript, and many write websites with additional libraries or frameworks such as JQuery. This may be fine for the most modern browsers, but for older browsers as well as mobile and notepad devices, extra care must be taken when using JavaScript. Other's note difficulties in SEO, stating that with a single page, you only have one set of metadata, and your semantic HTML is limited. 
 
-There are several concerns when using parallax on your web designs. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques require JavaScript and many write websites with additional libraries or frameworks such as JQuery. This is fine for many browsers, but as we move towards mobile development and notepad devices, extra care must be taken when using JavaScript.
-
-Other's note difficulties in SEO, stating that with a single page, you only have one set of metadata, and your semantic HTML is limited. However, one of the main detractors from using JavaScript in some of the methods is performance issues. I noticed myself when writing this primer, that the Porsche website example above sometimes runs into problems when I view the site in Chrome. Which now brings us to:
+Going back to one of the main detractors - performance issues - I noticed myself when trying to select parallax websites that many suffered performance issues or had glitches. In fact, the Porsche website example above randomly runs into problems when I view the site in the latest version of Chrome. Which now brings us to:
 
 ##Parallax scrolling effects with just CSS
 By just using CSS, a lot of speed and bug performance issues can be alleviated. Moreover, at least for now, we can learn a little more about CSS. First, let's just start off with something simple... using the "position" properties to make one image scroll while keeping the other stationary.
 
-The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under part1.html and part1.css. But for illustrations sake, the main parts are here:
+The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under [part1.html](part1.html) and part1.css. But for illustrations sake, the main parts are here and you can see the results (for this page and the following) by simply clicking on the names of the files because they are linked:
 
 ```HTML
   <body>
@@ -176,7 +171,7 @@ If you are a newbie, or hazy on what these property values mean, you can check t
 
 Anyway, try it out. You will see that upon scolling, the pickle will reveal that he was covering a pear. As you continue to scroll, you can see how this occured as another pickle will come up beside the pear. Basically, the pickle masked the pear from view. 
 
-Now, I think it is important to stop right here and play with this system. Try changing the position values around. Switch them between 'static', 'fixed', 'relative', 'absolute'. To help you visualize, use part1b.html and part1b.css - here the border's are now uncommented (you can also uncomment them yourself, in the part1.css file. These borders will help you visualize what happens when you change the position property. 
+Now, I think it is important to stop right here and play with this system. Try changing the position values around. Switch them between 'static', 'fixed', 'relative', 'absolute'. To help you visualize, use [part1b.html](part1b.html) that calls part1b.css - here the border's are now uncommented (you can also uncomment them yourself, in the part1.css file. These borders will help you visualize what happens when you change the position property. 
 
 However, to get on track. This is a basic way to set up scrolling effects for your website.
 
@@ -186,54 +181,68 @@ While there are a few ways to make scrolling effects with CSS, likely the most i
 Again, the code is provided in the files as part2.html and part2.css, while the important parts are displayed below:
 
 ```HTML
-  <body>
-    <div class="parallax">
-      <div class="parallax_layer parallax_layer-back">
-        <div class="spacer"><div class="wide"><img src="img/pickle-small.png"></div></div>
-      </div>
-      <div class="parallax_layer parallax_layer-front">
-        <div class="spacer2"><div class="wide"><img src="img/pear-small.png"></div></div>
-      </div>
+    <div class="spacer">
+
+    <!-- The Pear -->
+    <div class="pear-background-container">
+      <img src="img/pear-small.png"  alt='pear'>
     </div>
-  </body>
+
+    <!-- The first Pickle -->
+    <div class="pickle-foreground-container">
+      <img src="img/pickle-small.png"  alt='pickle1'>
+    </div>
+
+    <!-- The second Pickle -->
+    <div class="pickle-foreground-container2">
+      <img src="img/pickle-small.png"  alt='pickle2'>
+    </div>
+
+    </div>
  ```
 
  ```CSS
- .parallax {
-    font-size: 200%;
-  }
+ /*----- Bring things to the middle -----*/
+.spacer {
+  margin: 0 25% 0 25%;
+}
 
-   /* add some padding to force scrollbars */
-  .parallax_layer {
-    padding: 100vh 0;
-  }
+/*----- Containers ------*/
+.pear-background-container {
+  position: fixed;
+  top: 150px;
+  /*border: 1px solid cyan;*/
+}
 
-   /* center the content in the parallax layers */
-  .spacer {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.pickle-foreground-container {
+  position: relative;
+  top: 150px;
+  /*border: 1px solid red;*/
+}
 
-  .spacer2 {
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  .dark-box {
-  
-      height: 400px;
-      width: 100vw;
-      background-color: rgba(255, 200, 200, 0.7);
-  }
-  .wide {
-      height: 100vh;
-      width: auto;
-  }
+.pickle-foreground-container2 {
+  position: relative;
+  top: 800px;
+  left: 220px;
+  /*border: 1px solid lime;*/
+}
+
+/*----- Images -----*/
+.pear-background-container img {
+  border-radius: 50%;
+  /*border: 1px solid blue;*/
+}
+
+.pickle-foreground-container img {
+  border-radius: 50%;
+  /*border: 1px solid pink;*/
+}
+
+.pickle-foreground-container2 img {
+  border-radius: 50%;
+  /*border: 1px solid green;*/
+}
 ```
+
 Now when you scroll the pear out paces the pickle!!!
 
