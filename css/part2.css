@@ -39,13 +39,11 @@ body {
 /*----- For Page ------ */
 .parallax {
   font-size: 200%;
-  perspective-origin-x: 100%;
 }
 
 /* Add some padding to force scrollbars */
 .parallax_layer {
   padding: 100vh 0;
-  transform-origin-x: 100%;
 }
 
 /* Center the content in the parallax layers */
