@@ -178,71 +178,65 @@ However, to get on track. This is a basic way to set up scrolling effects for yo
 ##Actual Parallax
 While there are a few ways to make scrolling effects with CSS, likely the most interesting is using parallax to make parallax. That's right, we are going to go 3D in order to make a 3D effect. So as far as I can tell, the technique we will be focusing on today was either fully or partially (or independently) developed by Keith Clark.  
 
-Again, the code is provided in the files as part2.html and part2.css, while the important parts are displayed below:
+Again, the code is provided in the files as [part2.html](part2.html) and part2.css, while some of the important parts are displayed below:
 
 ```HTML
-    <div class="spacer">
+    <div class="parallax">
 
-    <!-- The Pear -->
-    <div class="pear-background-container">
-      <img src="img/pear-small.png"  alt='pear'>
-    </div>
+      <!-- Pear -->
+      <div class="parallax_layer parallax_layer-front">
+        <div class="spacer-pear">
+          <img src="img/pear-small.png">
+        </div>
+      </div>
 
-    <!-- The first Pickle -->
-    <div class="pickle-foreground-container">
-      <img src="img/pickle-small.png"  alt='pickle1'>
-    </div>
-
-    <!-- The second Pickle -->
-    <div class="pickle-foreground-container2">
-      <img src="img/pickle-small.png"  alt='pickle2'>
-    </div>
+      <!-- Pickle -->
+      <div class="parallax_layer parallax_layer-back">
+        <div class="spacer-pickle">
+          <img src="img/pickle-small.png">
+        </div>
+      </div>
 
     </div>
  ```
 
  ```CSS
- /*----- Bring things to the middle -----*/
-.spacer {
-  margin: 0 25% 0 25%;
+/*----- For Parallax ----- */
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
 }
 
-/*----- Containers ------*/
-.pear-background-container {
-  position: fixed;
-  top: 150px;
-  /*border: 1px solid cyan;*/
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.pickle-foreground-container {
-  position: relative;
-  top: 150px;
-  /*border: 1px solid red;*/
+.parallax_layer-front {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
-.pickle-foreground-container2 {
-  position: relative;
-  top: 800px;
-  left: 220px;
-  /*border: 1px solid lime;*/
+.parallax_layer-back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
 }
 
-/*----- Images -----*/
-.pear-background-container img {
-  border-radius: 50%;
-  /*border: 1px solid blue;*/
-}
-
-.pickle-foreground-container img {
-  border-radius: 50%;
-  /*border: 1px solid pink;*/
-}
-
-.pickle-foreground-container2 img {
-  border-radius: 50%;
-  /*border: 1px solid green;*/
-}
 ```
 
 Now when you scroll the pear out paces the pickle!!!
 
+So, what is happening here. Well, what Keith did was take into account that the browser actually can work in 3D. Here he uses the [perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) CSS property in the 'parallax' class. The values for this property set the displacement from the z = 0 plane and the viewer. The real magic comes from the [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) property - this allows you to alter rotation and translation, as well as skewness and scale in 3D coordinate space. By giving the value of -1 to the "back" layer that holds the pickle, the pickle will move slower... why? Think about Walt Disney and the video (which I hope you watched above). This is the same principle as the first example he gave in the video with the moon. While there is no fixed 'moon' in this example, the pickle represents say a character on one of the lower level planes of the multi-plane camera platform. The pear is one of the close ones. If we swap out the pickle and the pear with the same rectangular image, representative of one of Disney's planes, things might be more clear... so check out [part3.html](part3.html). 
+
+<p align="center">
+<a href="part3.html"><img src="img/part3.png" height="400"></img></a>
+</p>
+
+In [part3.html](part3.html) Here you will see one of my favorite spots that is south of San Francisco. The two images are the same size. They are the same image.
+**_Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up._**
