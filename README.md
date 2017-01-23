@@ -311,7 +311,7 @@ and our extra css is:
 }
 ```
 
-And this gives our new site, which you can check out:
+And this gives our [new site](https://datadaveshin.github.io/parallax/part5.html), which you can check out:
 
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part5.html"><img src="img/final.png" height="400"></img></a>
