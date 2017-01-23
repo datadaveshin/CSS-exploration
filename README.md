@@ -246,7 +246,7 @@ Now, you may ask, why was the pickle the same size as the pear??? Well, there is
 So here we have now applied the scale factor and you can see in [part4.html](https://datadaveshin.github.io/parallax/part4.html) that the words are now the same size. Well, maybe that isn't the easiest to see, how about if the words said the same thing... [part4b.html](https://datadaveshin.github.io/parallax/part4b.html)
 
 <p align="center">
-<a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled.png" height="400"></img></a>
+<a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled2.png" height="400"></img></a>
 </p>
 **_Fig. 9. There are two words here, but they appear as one because the scale factor is layed out correctly._**
 
@@ -319,7 +319,11 @@ And this gives our new site, which you can check out:
 **_Fig. 11. Putting it all together..._**
 
 So what you end up with is a basic parallax page done entirely in CSS. 
-All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
+All in all, this was an interesting exploration of the CSS that goes into 3D transformations!
+
+
+
+
 
 ---------------------------------
 
