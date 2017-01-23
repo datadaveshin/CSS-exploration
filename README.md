@@ -321,6 +321,8 @@ And this gives our new site, which you can check out:
 So what you end up with is a basic parallax page done entirely in CSS. 
 All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
 
+---------------------------------
+
 _References for your enjoyment:_
 
 - https://en.wikipedia.org/wiki/Multiplane_camera
