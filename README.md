@@ -256,7 +256,70 @@ Now, of course, as I was trying to make my own full-blown fancy version of a web
 
 **_Fig. 10. The CSS technique with a couple of little tweaks._**
 
-Likely the most important is a formula to line up your images to the viewport. Here you would set the 'position' property of your moving div to 'relative', and give the 'top' property a value of `calc(((100vh - aspectRatio) / 4 * -2)`, but watch the video because he has a has a couple of other nice tricks. Other considerations can be found [here](http://keithclark.co.uk/articles/practical-css-parallax/). All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
+In that video, he made several tweaks to make the images line up with the viewport. First, he switched from using the 'perspective' property to the 'tranform-style' property to include the 'perserve-3d' value:
+
+.parallax {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /*-webkit-perspective: 1px;
+  perspective: 1px;*/
+}
+
+It appears to me that using this allows you to preserve the movement of translateZ. The other important tweak was to set the 'position' property of your moving div to 'relative', and give the 'top' property a value of `calc(((100vh - aspectRatio) / 4 * -2)`, where the aspect ratio would be your image's `width/height * 100`. Keith himself also notes some other considerations [here](http://keithclark.co.uk/articles/practical-css-parallax/). But, back to the code. So, now we would have in our css file:
+
+```CSS
+.back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  position: relative;
+  top: calc(((100vh - 56.596475770925vw) / 4) * -2)
+}
+```
+
+Like in the video, I also added a 3rd element to the parallax group. I just called it extra:
+
+This makes our main html look like this:
+
+```HTML
+  <div class="parallax">
+
+    <div class="back">
+      <img src="img/bigsur.jpg" alt="big sur">
+    </div>
+
+    <div class="extra">
+      <h2>Hello?</h2>
+    </div>
+
+    <div class="front">
+      <h1>Time for a vacation</h1>
+    </div>
+
+  </div>
+```
+
+and our extra css is:
+
+```CSS
+.extra {
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  text-align: center;
+}
+```
+
+And this gives our new site, which you can check out:
+
+<p align="center">
+<a href="https://datadaveshin.github.io/parallax/part5.html"><img src="img/final.png" height="400"></img></a>
+</p>
+**_Fig. 11. Putting it all together..._**
+
+So what you end up with is a basic parallax page done entirely in CSS. 
+All in all, this was an interesting exploration of the CSS that goes into 3D transformations. 
 
 _References for your enjoyment:_
 
