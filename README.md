@@ -232,14 +232,14 @@ Now when you scroll the pear out paces the pickle!!!
 
 So, what is happening here. Well, what Keith did was take into account that the browser actually can work in 3D. Here he uses the [perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) CSS property in the 'parallax' class. The values for this property set the displacement from the z = 0 plane and the viewer. The real magic comes from the [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) property - this allows you to alter rotation and translation, as well as skewness and scale in 3D coordinate space. By giving the value of -1 to the "back" layer that holds the pickle, the pickle will move slower... why? Think about Walt Disney and the video (which I hope you watched above). This is the same principle as the first example he gave in the video with the moon. While there is no fixed 'moon' in this example, the pickle represents say a character on one of the lower level planes of the multi-plane camera platform. The pear is one of the close ones. If we swap out the pickle and the pear with the same rectangular image, representative of one of Disney's planes, things might be more clear... so check out [part3.html](https://datadaveshin.github.io/parallax/part3.html). 
 
-In [part3.html](https://datadaveshin.github.io/parallax/part3.html) Here you will see one of my favorite spots that is south of San Francisco. The two images are the same size. They are the same image:
+In [part3.html](https://datadaveshin.github.io/parallax/part3.html) you will see one of my favorite spots that is south of San Francisco: 
 
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part3.html"><img src="img/part3.png" height="400"></img></a>
 </p>
 **_Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up._**
 
-However, one is smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html](https://datadaveshin.github.io/parallax/part3b.html), or perhaps it may be clearer with text [part3c.html](https://datadaveshin.github.io/parallax/part3c.html). 
+The two images are the same, thus their dimensions are identical. However, one appears smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html](https://datadaveshin.github.io/parallax/part3b.html), or perhaps it may be clearer with text [part3c.html](https://datadaveshin.github.io/parallax/part3c.html). 
 
 Now, you may ask, why was the pickle the same size as the pear??? Well, there is one other part that was in that particular example that was not included in the ones that followed. Keith uses 'tranform' again, but with scaling using the 'scale' function. So basically, the back image is further away, so we must increase it's size. The calculation to set the scale is `1 + (translateZ * -1) / perspective`, so in this case: 1 + (-1 * -1) / 1 = 2. Using this formula, you can set the relative speeds of your elements.
 
