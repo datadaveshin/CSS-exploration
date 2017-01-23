@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+h1 {
+  font-family: 'Lato', 'Arial';
+  font-size: 8vh;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Lato', 'Arial';
+  font-size: 10vh;
+  font-weight: 300;
+  color: #FFF;
+  text-shadow: 1px 0 0 #000;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.parallax {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /*-webkit-perspective: 1px;
+  perspective: 1px;*/
+}
+
+.front {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  background-color: rgba(240, 240, 240, 0.6);
+  padding: 10em 0 30em 0;
+  text-align: center;
+}
+
+.extra {
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  text-align: center;
+}
+
+.back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  position: relative;
+  top: calc(((100vh - 56.596475770925vw) / 4) * -2)
+}
