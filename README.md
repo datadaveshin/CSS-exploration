@@ -258,12 +258,14 @@ Now, of course, as I was trying to make my own full-blown fancy version of a web
 
 In that video, he made several tweaks to make the images line up with the viewport. First, he switched from using the 'perspective' property to the 'tranform-style' property to include the 'perserve-3d' value:
 
+```CSS
 .parallax {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   /*-webkit-perspective: 1px;
   perspective: 1px;*/
 }
+```
 
 It appears to me that using this allows you to preserve the movement of translateZ. The other important tweak was to set the 'position' property of your moving div to 'relative', and give the 'top' property a value of `calc(((100vh - aspectRatio) / 4 * -2)`, where the aspect ratio would be your image's `width/height * 100`. Keith himself also notes some other considerations [here](http://keithclark.co.uk/articles/practical-css-parallax/). But, back to the code. So, now we would have in our css file:
 
