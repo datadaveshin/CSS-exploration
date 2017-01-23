@@ -38,12 +38,10 @@ img {
 }
 
 .parallax {
-  position: relative;
-  height: 100vh;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-perspective: 1px;
-  perspective: 1px;
+  /*-webkit-perspective: 1px;
+  perspective: 1px;*/
 }
 
 .front {
@@ -65,8 +63,8 @@ img {
 }
 
 .back {
-  -webkit-transform: translateZ(-1px) scale(3);
-  transform: translateZ(-1px) scale(3);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
   position: relative;
   top: calc(((100vh - 56.596475770925vw) / 4) * -2)
 }
