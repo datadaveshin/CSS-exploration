@@ -320,8 +320,9 @@ And this gives our new site [part5.html](https://datadaveshin.github.io/parallax
 </p>
 **_Fig. 11. Putting it all together..._**
 
-So what you end up with is a basic parallax page done entirely in CSS. 
-All in all, this was an interesting exploration of the CSS that goes into 3D transformations!
+Note - as usual, when trying out examples, you must do some modifications. One that I came across was actually commenting out the suggested `-webkit-overflow-scrolling: touch;` line to get this last example to render correctly on my iOS. By that I mean to keep the 3D parallax scrolling. It works pretty well when the phone is sideways. Extra tweaking will have to be done when holding the phone vertically. 
+
+All in all, this was an interesting exploration of the CSS that goes into 3D transformations! And what you end up with is a basic parallax page done entirely in CSS using... parallax! 
 
 
 
