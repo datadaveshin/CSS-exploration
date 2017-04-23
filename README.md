@@ -7,7 +7,7 @@ Parallax itself is a term used to describe the apparent displacement of an objec
 <p align="center">
   <img src="img/parallax-example2.png" width="400"></img>
 </p>
-**_Fig. 1. Parallax diagram_**
+**_ Fig. 1. Parallax diagram _**
 
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples I just made when looking at milk in a measuring cup.
 
@@ -35,7 +35,7 @@ For side to side motion, animators could let the background remain stationary or
 
 **_Fig. 4. Click above to see 1980s parallax effects that were used to give a better sense of motion in video games._**
 
-##Parallax-scrolling for websites
+## Parallax-scrolling for websites
 For the web, in the most simple sense, I would describe parallax scrolling as the appearance of motion caused by a faster moving foreground element as compared to a slower moving element between the foreground and the background. However, what I call 'parallax-like' (one group of elements move while others remain on a static background) is still a cool effect.
 
 [Here](http://www.studio540.com/) is one of my favorite pages that uses that effect. It's a Brazilian Jiu Jitsu school homepage. I like it because it's clean, and I also happen to know some of the people in the pictures ;)
@@ -47,7 +47,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 
 Importantly, besides being really clean, I like the responsiveness and how the parallax-like effect is used to effectively go through all of the parts of what a typical martial arts webpage would want to display: 1) a splash page, 2) the instruction team, 3) the class schedule, 4) facility photos, 5) photos of the team training, 6) contact information all on a single page. The skilled designer manages to draw you through the entire site. Which brings me to...
 
-##When to use a parallax-type scrolling page
+## When to use a parallax-type scrolling page
 Here are some examples of when you want to use a parallax effect:
 
 1. When have a long single-page to navigate through
@@ -64,7 +64,7 @@ Some of examples when not to use it:
 
 However, by using the techniques correctly and when warranted, you can highlight key points of your presentation. Or perhaps just through in little extras that you want the user to pay attention to.
 
-##Some award winning extreme examples
+## Some award winning extreme examples
 You can find sites that catalog some of the best of the best websites that use a certain technology. By checking some out, I found a couple of examples of parallax sites that won some awards. The first however actually isn't a parallax site (or at leat I don't consider it a true parallax site), again because it is using fixed backgrounds and a moving foreground. Nonetheless, it's pretty cool:
 
 <p align="center">
@@ -81,14 +81,14 @@ The next example is a masterpiece. It tells a story and is animated throughout. 
 **_Fig. 7. This website uses parallax to achieve motion and depth, and is totally over the top. Click the image above._**
 
 
-##Methods and Concerns
+## Methods and Concerns
 Well, here's the deal. There are various methods to accomplish these effects. We have already discussed using a fixed background and a moving foreground for a parallax-like scrolling effect. For true parallax sites, there are various methods available to provide animation, however they may rely on constantly redrawing or rasterizing images, using complex patterns or sprites.
 
 There are several concerns when using parallax on your web designs, and a big one is performance. For the sake of this transcript, I personally was looking to learn a little more about CSS, so the first concern that matches up is that many of the techniques do require JavaScript, and many write websites with additional libraries or frameworks such as JQuery. This may be fine for the most modern browsers, but for older browsers as well as mobile and notepad devices, extra care must be taken when using JavaScript. Other's note difficulties in SEO, stating that with a single page, you only have one set of metadata, and your semantic HTML is limited.
 
 Going back to one of the main detractors - performance issues - I noticed myself when trying to select parallax websites that many suffered performance issues or had glitches. In fact, the Porsche website example above randomly runs into problems when I view the site in the latest version of Chrome. Which now brings us to:
 
-##Parallax scrolling effects with just CSS
+## Parallax scrolling effects with just CSS
 By just using CSS, a lot of speed and bug performance issues can be alleviated. Moreover, at least for now, we can learn a little more about CSS. First, let's just start off with something simple... using the "position" properties to make one image scroll while keeping the other stationary.
 
 The main part of the HTML code is pretty simple, we have a couple of images that are put into divs so we can change their properties. The full code is in the repo under [part1.html](https://datadaveshin.github.io/parallax/part1.html) and part1.css. But for illustrations sake, the main parts are here and you can see the results (for this page and the following) by simply clicking on the names of the files because they are linked:
@@ -173,7 +173,7 @@ Now, I think it is important to stop right here and play with this system. Try c
 
 However, to get on track. This is a basic way to set up scrolling effects for your website.
 
-##Actual Parallax
+## Actual Parallax
 While there are a few ways to make scrolling effects with CSS, likely the most interesting is using parallax to make parallax. That's right, we are going to go 3D in order to make a 3D effect. So as far as I can tell, the technique we will be focusing on today was either fully or partially (or independently) developed by Keith Clark.  
 
 Again, the code is provided in the files as [part2.html](https://datadaveshin.github.io/parallax/part2.html) and part2.css, while some of the important parts are displayed below:
