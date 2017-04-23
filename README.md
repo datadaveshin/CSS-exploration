@@ -16,6 +16,7 @@ Likely, one of the better examples I can recall is accurately reading a beaker f
   <img src="img/pyrex1.jpg" width="400"></img>
   <img src="img/pyrex2.jpg" width="400"></img>
 </p>
+
 ***Fig 2. On the left it appears we have more than 1/2 a cup because we are looking at an angle from above. When the camera (or your eye) is in the same plane as the top layer of the milk, you can see we actually have 1/2 a cup.***
 
 When taken in conjunction with motion, a great example is when you look out of the window of a moving car. A fence nearest the car will appear to be moving by much quicker than the trees or homes behind the fence, which in turn will seem to move more quickly than say the mountains in the background.
@@ -46,6 +47,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 <p align="center">
 <a href="http://www.studio540.com/"><img src="img/studio540.png" height="500"></img></a>
 </p>
+
 ***Fig. 5. Click above to see a website that uses a nice scrolling effect to get what would normally be several different pages onto a single page. The designer basically entices the user to scroll through all of the sections.***
 
 Importantly, besides being really clean, I like the responsiveness and how the parallax-like effect is used to effectively go through all of the parts of what a typical martial arts webpage would want to display: 1) a splash page, 2) the instruction team, 3) the class schedule, 4) facility photos, 5) photos of the team training, 6) contact information all on a single page. The skilled designer manages to draw you through the entire site. Which brings me to...
@@ -73,6 +75,7 @@ You can find sites that catalog some of the best of the best websites that use a
 <p align="center">
 <a href="http://porschevolution.com/#"><img src="img/porsche.png" height="400"></img></a>
 </p>
+
 ***Fig. 6. This website is really cool, again using a nice scrolling effect. Click the image above.***
 
 
@@ -81,6 +84,7 @@ The next example is a masterpiece. It tells a story and is animated throughout. 
 <p align="center">
 <a href="http://www.sbs.com.au/theboat/"><img src="img/theboat.png" height="400"></img></a>
 </p>
+
 ***Fig. 7. This website uses parallax to achieve motion and depth, and is totally over the top. Click the image above.***
 
 
@@ -240,6 +244,7 @@ In [part3.html](https://datadaveshin.github.io/parallax/part3.html) you will see
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part3.html"><img src="img/part3.png" height="400"></img></a>
 </p>
+
 ***Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up. Click the image above to see it live.***
 
 The two images are the same, thus their dimensions are identical. However, one appears smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html](https://datadaveshin.github.io/parallax/part3b.html), or perhaps it may be clearer with text [part3c.html](https://datadaveshin.github.io/parallax/part3c.html).
@@ -251,6 +256,7 @@ So here we have now applied the scale factor and you can see in [part4.html](htt
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled2.png" height="400"></img></a>
 </p>
+
 ***Fig. 9. There are two words here, but they appear as one because the scale factor is layed out correctly. Click the image above to play with it.***
 
 Now, of course, as I was trying to make my own full-blown fancy version of a web-site I started running into problems. After the typical frustration, and continuing writing this up... I of course stumbled across a youtube video from Thomas Bradley that nicely goes over what has been discussed, and a few little extra tricks to put your page together using this technique.
@@ -321,6 +327,7 @@ And this gives our new site [part5.html](https://datadaveshin.github.io/parallax
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part5.html"><img src="img/final.png" height="400"></img></a>
 </p>
+
 ***Fig. 11. Putting it all together! Click the image to see a simple CSS only parallax example.***
 
 Note - as usual, when trying out examples, you must do some modifications. One that I came across was actually commenting out the suggested `-webkit-overflow-scrolling: touch;` line to get this last example to render correctly on my iOS. By that I mean to keep the 3D parallax scrolling. It works pretty well when the phone is sideways. Extra tweaking will have to be done when holding the phone vertically.
