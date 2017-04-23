@@ -1,6 +1,6 @@
 # A Primer on Parallax
 ## What is parallax?
-In the website design world, parallax-scrolling is a technique used to add a sense of depth and motion to web pages. As the user scrolls upward and downward along the page, different elements of the page move at different rates. This adds some sugar and spice to what could otherwise be a flat static web page. While the technique is several years old, it is still a part of modern front-end web design and creates a great effect when used wisely.
+In the world of website design, parallax-scrolling is a technique used to add a sense of depth and motion to web pages. As the user scrolls upward and downward along the page, different elements of the page move at different rates. This adds some sugar and spice to what could otherwise be a flat static web page. While the technique is several years old, it is still a part of modern front-end web design and creates a great effect when used wisely.
 
 Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine their distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along.
 
