@@ -1,13 +1,13 @@
 # A Primer on Parallax
 ## What is parallax?
-In the website design world, parallax-scrolling is a technique used to add a sense of depth and motion to web pages as the user scrolls downward, or up for that matter, along the page. This adds some sugar and spice to what could otherwise be a flat static web page. Now, while the technique is several years, it is still a part of modern front-end web design and creates a great effect when used wisely.
+In the website design world, parallax-scrolling is a technique used to add a sense of depth and motion to web pages. As the user scrolls upward and downward along the page, different elements of the page move at different rates. This adds some sugar and spice to what could otherwise be a flat static web page. While the technique is several years old, it is still a part of modern front-end web design and creates a great effect when used wisely.
 
-Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along.
+Parallax itself is a term used to describe the apparent displacement of an object when viewed from different positions (usually involving different angles). In fact because objects that are closer to us have a larger apparent displacement than more distant objects we can determine their distances. Parallax is calculated based on the angle of inclination, which I would describe as the angle between the observer and the object, and the normal line that describes the shortest distance to the line or plane that the observer may move along.
 
 <p align="center">
   <img src="img/parallax-example2.png" width="400"></img>
 </p>
-**_ Fig. 1. Parallax diagram _**
+***Fig. 1. Parallax diagram***
 
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples I just made when looking at milk in a measuring cup.
 
@@ -15,7 +15,7 @@ Likely, one of the better examples I can recall is accurately reading a beaker f
   <img src="img/pyrex1.jpg" width="400"></img>
   <img src="img/pyrex2.jpg" width="400"></img>
 </p>
-**_Fig 2. On the left it appears we have more than 1/2 a cup because we are looking at an angle from above. When the camera (or your eye) is in the same plane as the top layer of the milk, you can see we actually have 1/2 a cup._**
+***Fig 2. On the left it appears we have more than 1/2 a cup because we are looking at an angle from above. When the camera (or your eye) is in the same plane as the top layer of the milk, you can see we actually have 1/2 a cup.***
 
 When taken in conjunction with motion, a great example is when you look out of the window of a moving car. A fence nearest the car will appear to be moving by much quicker than the trees or homes behind the fence, which in turn will seem to move more quickly than say the mountains in the background.
 
@@ -25,15 +25,17 @@ In the late 1930's, Disney took this to an extreme level with their seven-layere
 
 [![Walt Disney](https://img.youtube.com/vi/YdHTlUGN1zw/0.jpg)](https://www.youtube.com/watch?v=YdHTlUGN1zw)
 
-**_Fig. 3. Click the image to see Walt Disney explain how the multi-planed camera allowed 3D-like animation using parallax._**
+***Fig. 3. Click the image to watch a video with Walt Disney explaining how the multi-planed camera allowed 3D-like animation using parallax.***
 
 One of the most important take-aways from the explanation of how it works is that the scenes are broken up by distance onto different planes by painting the scenes onto different pieces of glass. The background (in Disney's example, the background contains the moon), does not move. To make a 3D effect the pieces of glass can be moved forward or backward. Thus, the moon will stay the same size, where as the elements that are on the closest piece of glass will change size more rapidly.
 
-For side to side motion, animators could let the background remain stationary or move very little, while closer elements on different planes moved at different rates from side to side. These techniques stood the test of time, and were later moved to video games in the early 1980's. One of the first 2D video games to use parallax to make a 3D effect was Jungle King/Jungle Hunt from Taito. A game where the explorer Sir Dudley races to save Lady Penelope in the dangerous jungle. Of course Super Mario Brothers games use parallax scrolling, and the technique still thrives today in Unity 2D game development. If you want to see how archaic games were back then, check out the Atari 2600 version of the game:
+For side to side motion, animators would let the background remain stationary or move very little, while closer elements on different planes moved at different rates from side to side. These techniques stood the test of time, and were later moved to video games in the early 1980's.
+
+One of the first 2D video games to use parallax to make a 3D effect was Jungle King/Jungle Hunt from Taito. A game where the explorer Sir Dudley races to save Lady Penelope in the dangerous jungle. Of course Super Mario Brothers games use parallax scrolling, and the technique still thrives today in Unity 2D game development. If you want to see how archaic games were back then, check out the Atari 2600 version of the game:
 
 [![Jungle King](https://img.youtube.com/vi/flYEqNNSWGs/0.jpg)](https://www.youtube.com/watch?v=flYEqNNSWGs)
 
-**_Fig. 4. Click above to see 1980s parallax effects that were used to give a better sense of motion in video games._**
+***Fig. 4. Click above to see 1980s parallax effects that were used to give a better sense of motion in video games.***
 
 ## Parallax-scrolling for websites
 For the web, in the most simple sense, I would describe parallax scrolling as the appearance of motion caused by a faster moving foreground element as compared to a slower moving element between the foreground and the background. However, what I call 'parallax-like' (one group of elements move while others remain on a static background) is still a cool effect.
@@ -43,7 +45,7 @@ For the web, in the most simple sense, I would describe parallax scrolling as th
 <p align="center">
 <a href="http://www.studio540.com/"><img src="img/studio540.png" height="500"></img></a>
 </p>
-**_Fig. 5. Click above to see a website that uses a nice scrolling effect to get what would normally be several different pages onto a single page. The designer basically entices the user to scroll through all of the sections._**
+***Fig. 5. Click above to see a website that uses a nice scrolling effect to get what would normally be several different pages onto a single page. The designer basically entices the user to scroll through all of the sections.***
 
 Importantly, besides being really clean, I like the responsiveness and how the parallax-like effect is used to effectively go through all of the parts of what a typical martial arts webpage would want to display: 1) a splash page, 2) the instruction team, 3) the class schedule, 4) facility photos, 5) photos of the team training, 6) contact information all on a single page. The skilled designer manages to draw you through the entire site. Which brings me to...
 
@@ -70,7 +72,7 @@ You can find sites that catalog some of the best of the best websites that use a
 <p align="center">
 <a href="http://porschevolution.com/#"><img src="img/porsche.png" height="400"></img></a>
 </p>
-**_Fig. 6. This website is really cool, again using a nice scrolling effect. Click the image above._**
+***Fig. 6. This website is really cool, again using a nice scrolling effect. Click the image above.***
 
 
 The next example is a masterpiece. It tells a story and is animated throughout. You can tell why this one won an award:
@@ -78,7 +80,7 @@ The next example is a masterpiece. It tells a story and is animated throughout. 
 <p align="center">
 <a href="http://www.sbs.com.au/theboat/"><img src="img/theboat.png" height="400"></img></a>
 </p>
-**_Fig. 7. This website uses parallax to achieve motion and depth, and is totally over the top. Click the image above._**
+***Fig. 7. This website uses parallax to achieve motion and depth, and is totally over the top. Click the image above.***
 
 
 ## Methods and Concerns
@@ -237,7 +239,7 @@ In [part3.html](https://datadaveshin.github.io/parallax/part3.html) you will see
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part3.html"><img src="img/part3.png" height="400"></img></a>
 </p>
-**_Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up. Click the image above to see it live._**
+***Fig. 8. The arrangment of these images is reminiscent of Disney's multi-plane camera set-up. Click the image above to see it live.***
 
 The two images are the same, thus their dimensions are identical. However, one appears smaller than the other. It is because it is further away from our viewpont... the `transform: translateZ(-1px)`. Just to be clear, the larger (transparent) image is in front of the smaller one, for proof, let's look at it fully opaque [part3b.html](https://datadaveshin.github.io/parallax/part3b.html), or perhaps it may be clearer with text [part3c.html](https://datadaveshin.github.io/parallax/part3c.html).
 
@@ -248,13 +250,13 @@ So here we have now applied the scale factor and you can see in [part4.html](htt
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part4b.html"><img src="img/scaled2.png" height="400"></img></a>
 </p>
-**_Fig. 9. There are two words here, but they appear as one because the scale factor is layed out correctly. Click the image above to play with it._**
+***Fig. 9. There are two words here, but they appear as one because the scale factor is layed out correctly. Click the image above to play with it.***
 
 Now, of course, as I was trying to make my own full-blown fancy version of a web-site I started running into problems. After the typical frustration, and continuing writing this up... I of course stumbled across a youtube video from Thomas Bradley that nicely goes over what has been discussed, and a few little extra tricks to put your page together using this technique.
 
 [![tutorial](https://img.youtube.com/vi/n9zLJ0I8Djk/0.jpg)](https://www.youtube.com/watch?v=n9zLJ0I8Djk)
 
-**_Fig. 10. The CSS technique with a couple of little tweaks. A YouTube tutorial, click on it to check it out._**
+***Fig. 10. The CSS technique with a couple of little tweaks. A YouTube tutorial, click on it to check it out.***
 
 In that video, he made several tweaks to make the images line up with the viewport. First, he switched from using the 'perspective' property to the 'tranform-style' property to include the 'perserve-3d' value:
 
@@ -318,7 +320,7 @@ And this gives our new site [part5.html](https://datadaveshin.github.io/parallax
 <p align="center">
 <a href="https://datadaveshin.github.io/parallax/part5.html"><img src="img/final.png" height="400"></img></a>
 </p>
-**_Fig. 11. Putting it all together! Click the image to see a simple CSS only parallax example._**
+***Fig. 11. Putting it all together! Click the image to see a simple CSS only parallax example.***
 
 Note - as usual, when trying out examples, you must do some modifications. One that I came across was actually commenting out the suggested `-webkit-overflow-scrolling: touch;` line to get this last example to render correctly on my iOS. By that I mean to keep the 3D parallax scrolling. It works pretty well when the phone is sideways. Extra tweaking will have to be done when holding the phone vertically.
 
