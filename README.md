@@ -7,6 +7,7 @@ Parallax itself is a term used to describe the apparent displacement of an objec
 <p align="center">
   <img src="img/parallax-example2.png" width="400"></img>
 </p>
+
 ***Fig. 1. Parallax diagram***
 
 Likely, one of the better examples I can recall is accurately reading a beaker from chemistry class. Here, if your eye is above or below the plane that the top of the liquid you are measuring sits on, your measurement will be off. See these examples I just made when looking at milk in a measuring cup.
